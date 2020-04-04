@@ -1,3 +1,34 @@
+# What 
+
+Remote control a FY68xx Signal Generator with Python
+
+# How 
+
+Connect your signal generator to your PC with an USB cable.
+The signal generator should apear as a serial device like
+
+/dev/ttyUSB0
+
+You can check this e.g. with the Arduino IDE 
+
+Tools => Port
+
+There ist an example script "example_setFrequency.py" whick you can run in the terminal command line with
+
+python example_setFrequency.py 
+
+If it is not working, adapt the code line in the example to your PCs port:
+
+e.g.
+fy6800 = FY6xxx.FY6800("/dev/ttyUSB1", readtimeout=5)
+
+# Where
+
+Tested with Ubuntu Linux 16.04 LTS
+
+
+
+# HELP
 Help on class FY6xxx:
 
 NAME:
