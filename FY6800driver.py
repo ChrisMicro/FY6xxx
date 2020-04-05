@@ -2,9 +2,8 @@
 
 simpified driver class for signal generator FY6800 
 
-based on the testFy.py python script.
-
-Licensed under the GPL v3 by Nikki Cooper.
+based on the testFy.py python script licensed under the GPL v3 
+by Nikki Cooper.
 
 
 List of authors:
@@ -150,24 +149,7 @@ class FY6800driver:
 
       return
 
-generator=FY6800driver("/dev/ttyUSB0",readtimeout=2)
 
-
-channel=2
-generator.setOutputOFF(channel)
-
-channel=1
-generator.setOutputOFF(channel)
-
-generator.setFrequency(1000,channel)
-
-generator.setOutputON(channel)
-
-generator.setAmplitude(3.3,channel)
-generator.setAmplitude(1.2345,channel)
-generator.setFrequency(2000,channel)
-
-#print(amplitude2String(3.3))
 
 
 
